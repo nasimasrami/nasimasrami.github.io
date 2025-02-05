@@ -14,12 +14,13 @@
         <h1>Über mich</h1>
     </header>
 
-    <nav>
-        <a href="index.html">Startseite</a>
-        <a href="about.html">Über mich</a>
-        <a href="services.html">Leistungen</a>
-        <a href="appointment.html">Terminvereinbarung und Preise</a>
-    </nav>
+    <div id="nav-placeholder"></div>
+
+    <script>
+        fetch("nav.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("nav-placeholder").innerHTML = data);
+    </script>
 
 <section>
     <h2>Aus- und Fortbildungen</h2>
