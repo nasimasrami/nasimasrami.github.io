@@ -111,3 +111,15 @@ footer {
     background-color: #00796b; 
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
+
+footer nav a {
+    color: #90ee90; 
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+footer nav a:hover {
+    color: #76c76b; 
+    text-decoration: underline;
+}
