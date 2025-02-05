@@ -1,123 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Physiotherapist Services</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Physiotherapie Praxis</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            color: #333;
         }
+
         header {
-            background-color: #4CAF50;
+            background-color: #009688;
             color: white;
-            padding: 20px 0;
             text-align: center;
+            padding: 20px;
         }
+
         nav {
             display: flex;
             justify-content: center;
-            background-color: #333;
+            background-color: #00796b;
         }
+
         nav a {
             color: white;
             padding: 14px 20px;
             text-decoration: none;
             text-align: center;
         }
+
         nav a:hover {
-            background-color: #ddd;
-            color: black;
+            background-color: #004d40;
         }
+
         section {
             padding: 20px;
-            margin: 0 15px;
+            margin: 20px;
         }
-        .intro, .services, .contact {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-        }
+
         footer {
-            background-color: #333;
+            background-color: #00796b;
             color: white;
             text-align: center;
-            padding: 10px 0;
+            padding: 10px;
             position: fixed;
-            bottom: 0;
             width: 100%;
+            bottom: 0;
         }
-        .contact form input, .contact form textarea {
+
+        .contact-form input,
+        .contact-form textarea {
             width: 100%;
             padding: 10px;
-            margin-bottom: 10px;
+            margin: 10px 0;
             border: 1px solid #ccc;
             border-radius: 4px;
         }
-        .contact form button {
-            background-color: #4CAF50;
+
+        .contact-form button {
+            background-color: #009688;
             color: white;
+            padding: 12px 20px;
             border: none;
-            padding: 10px 20px;
-            cursor: pointer;
             border-radius: 4px;
+            cursor: pointer;
         }
-        .contact form button:hover {
-            background-color: #45a049;
+
+        .contact-form button:hover {
+            background-color: #00796b;
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Welcome to Our Physiotherapy Clinic</h1>
-    <p>Your recovery is our priority</p>
-</header>
+    <header>
+        <h1>Willkommen in der Physiotherapiepraxis von [Name]</h1>
+        <p>Professionelle Behandlung für Ihre Gesundheit und Ihr Wohlbefinden</p>
+    </header>
 
-<nav>
-    <a href="#about">About Us</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <nav>
+        <a href="#about">Über uns</a>
+        <a href="#services">Leistungen</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
 
-<section id="about" class="intro">
-    <h2>About Us</h2>
-    <p>We are a dedicated team of physiotherapists who focus on providing effective treatment for injuries, pain management, and rehabilitation. Our clinic offers personalized care and rehabilitation programs tailored to your individual needs.</p>
-</section>
+    <section id="about">
+        <h2>Über uns</h2>
+        <p>Herzlich willkommen in meiner Praxis für Physiotherapie! Als erfahrene Physiotherapeutin biete ich Ihnen individuelle Behandlungen, die auf Ihre Bedürfnisse abgestimmt sind. Meine Mission ist es, Ihre Lebensqualität zu verbessern, indem ich gezielte Therapien zur Schmerzreduktion, Rehabilitation und Prävention anbiete.</p>
+    </section>
 
-<section id="services" class="services">
-    <h2>Our Services</h2>
-    <ul>
-        <li>Sports Injury Rehabilitation</li>
-        <li>Post-Surgery Recovery</li>
-        <li>Chronic Pain Management</li>
-        <li>Orthopedic Physiotherapy</li>
-        <li>Massage Therapy</li>
-        <li>Postural and Mobility Assessments</li>
-    </ul>
-</section>
+    <section id="services">
+        <h2>Unsere Leistungen</h2>
+        <ul>
+            <li>Manuelle Therapie</li>
+            <li>Faszientherapie</li>
+            <li>Krankengymnastik</li>
+            <li>Sportphysiotherapie</li>
+            <li>Rehabilitation nach Operationen und Verletzungen</li>
+            <li>Massage und Entspannungstechniken</li>
+        </ul>
+    </section>
 
-<section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>Have a question or want to book an appointment? Reach out to us using the form below or call us directly!</p>
-    <form action="submit_form.php" method="post">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-        <button type="submit">Submit</button>
-    </form>
-</section>
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Sie möchten einen Termin vereinbaren oder haben Fragen? Kontaktieren Sie uns einfach über das Formular oder rufen Sie an!</p>
+        <form class="contact-form">
+            <label for="name">Ihr Name:</label>
+            <input type="text" id="name" name="name" required>
 
-<footer>
-    <p>&copy; 2025 Physiotherapy Clinic. All rights reserved.</p>
-</footer>
+            <label for="email">Ihre E-Mail-Adresse:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Ihre Nachricht:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Nachricht senden</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Physiotherapiepraxis [Name]. Alle Rechte vorbehalten.</p>
+    </footer>
 
 </body>
+
 </html>
+``
