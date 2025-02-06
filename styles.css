@@ -114,7 +114,7 @@ footer {
 
 .button {
     display: inline-block;
-    background-color: #3498db;
+    background-color: #13be93;
     color: white;
     padding: 10px 20px;
     text-align: center;
@@ -125,7 +125,7 @@ footer {
     transition: background-color 0.3s;
 }
 .button:hover {
-    background-color: #2980b9;
+    background-color: #145142;
 }
 
 .contact-section {
