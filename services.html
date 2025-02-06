@@ -1,40 +1,152 @@
+
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leistungen</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Meine Leistungen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        h1 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #3498db;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #27ae60;
+        }
+        .contact {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .section-divider {
+            border-top: 2px solid #ddd;
+            margin: 20px 0;
+        }
+    </style>
 </head>
-
 <body>
 
-    <header>
-        <h1>Unsere Leistungen</h1>
-    </header>
+    <h1>Meine Leistungen – Ihr Wohlbefinden im Mittelpunkt</h1>
+    <p>Willkommen in meiner Physiotherapiepraxis! Ich biete Ihnen eine professionelle und individuelle Betreuung, um Ihre Beweglichkeit zu fördern, Schmerzen zu lindern und Ihre Lebensqualität nachhaltig zu verbessern. Meine Behandlungsmethoden basieren auf jahrelanger Erfahrung und einer ganzheitlichen Herangehensweise.</p>
 
-    <div id="nav-placeholder"></div>
+    <div class="section-divider"></div>
 
-    <script>
-        fetch("nav.html")
-        .then(response => response.text())
-        .then(data => document.getElementById("nav-placeholder").innerHTML = data);
-    </script>
+    <h3>1. Manuelle Therapie – Bewegung ohne Einschränkungen</h3>
+    <p>Die manuelle Therapie ist eine bewährte Methode zur gezielten Behandlung von Muskel- und Gelenkbeschwerden. Sie hilft bei:</p>
+    <ul>
+        <li class="highlight">✅ Rückenschmerzen, Verspannungen und Bewegungseinschränkungen</li>
+        <li class="highlight">✅ Beschwerden nach Verletzungen oder Operationen</li>
+        <li class="highlight">✅ Blockaden und Fehlhaltungen, die Schmerzen verursachen</li>
+    </ul>
 
-    <section>
-        <h2>Unsere Behandlungen</h2>
-        <ul>
-            <li>Manuelle Therapie</li>
-            <li>Faszientherapie</li>
-            <li>Krankengymnastik</li>
-            <li>Sportphysiotherapie</li>
-            <li>Rehabilitation nach Operationen und Verletzungen</li>
-            <li>Massage und Entspannungstechniken</li>
-        </ul>
-    </section>
+    <div class="section-divider"></div>
+
+    <h3>2. Allgemeine Physiotherapie – Gesund durch Bewegung</h3>
+    <ul>
+        <li class="highlight">✅ Gezielte Übungen zur Kräftigung der Muskulatur</li>
+        <li class="highlight">✅ Individuelle Bewegungsprogramme zur Schmerzreduktion</li>
+        <li class="highlight">✅ Unterstützung bei orthopädischen Beschwerden</li>
+    </ul>
+
+    <div class="section-divider"></div>
+
+    <h3>3. Postoperative Rehabilitation – Ihr Weg zurück zur vollen Beweglichkeit</h3>
+    <ul>
+        <li class="highlight">✅ Physiotherapie nach Gelenkersatz (z. B. Hüfte, Knie)</li>
+        <li class="highlight">✅ Muskelaufbau nach chirurgischen Eingriffen</li>
+        <li class="highlight">✅ Beweglichkeitstraining zur schnelleren Genesung</li>
+    </ul>
+
+    <div class="section-divider"></div>
+
+    <h3>4. Schmerztherapie – Effektive Hilfe bei chronischen Beschwerden</h3>
+    <ul>
+        <li class="highlight">✅ Rückenschmerzen und Bandscheibenprobleme</li>
+        <li class="highlight">✅ Gelenkbeschwerden (z. B. Arthrose, Rheuma)</li>
+        <li class="highlight">✅ Muskelverspannungen durch Fehlhaltungen oder Stress</li>
+    </ul>
+
+    <div class="section-divider"></div>
+
+    <h3>5. Physiotherapie für Frauen – Individuelle Betreuung in jeder Lebensphase</h3>
+    <ul>
+        <li class="highlight">✅ Schwangerschaftsbegleitung und Rückbildungsgymnastik</li>
+        <li class="highlight">✅ Beckenbodentraining zur Stärkung und Prävention von Inkontinenz</li>
+        <li class="highlight">✅ Physiotherapie nach gynäkologischen Operationen</li>
+    </ul>
+
+    <div class="section-divider"></div>
+
+    <h3>6. Physiotherapie für Senioren – Beweglichkeit bis ins hohe Alter erhalten</h3>
+    <ul>
+        <li class="highlight">✅ Sturzprävention und Gleichgewichtstraining</li>
+        <li class="highlight">✅ Verbesserung der Beweglichkeit und Muskelkraft</li>
+        <li class="highlight">✅ Linderung altersbedingter Gelenkbeschwerden</li>
+    </ul>
+
+    <div class="section-divider"></div>
+
+    <h3>7. Hausbesuche – Physiotherapie in Ihren eigenen vier Wänden</h3>
+    <p>Für Patientinnen und Patienten, die meine Praxis nicht besuchen können, biete ich Hausbesuche an.</p>
+
+    <h3>Physiotherapie ohne Zuzahlung für BVAEB-Versicherte</h3>
+    <p>Als Vertragstherapeutin der BVAEB übernehme ich die Abrechnung Ihrer Physiotherapie direkt mit der Kasse – für Sie entstehen keine zusätzlichen Kosten.</p>
+
+    <h3>Hausbesuche im 18. Bezirk (1180 Wien)</h3>
+    <p>Ich komme direkt zu Ihnen nach Hause, damit Sie in Ihrer gewohnten Umgebung bestmöglich betreut werden – individuell, bequem und ohne zusätzlichen Aufwand für Sie.</p>
 
 
+    <div class="section-divider"></div>
+
+    <h3>Wann ist ein Hausbesuch sinnvoll?</h3>
+    <ul>
+        <li>📍 Wenn der Weg in die Praxis für Sie zu beschwerlich ist</li>
+        <li>📍 Nach einer Operation oder bei akuten Schmerzen</li>
+        <li>📍 Wenn eine regelmäßige Therapie in Ihrer gewohnten Umgebung effektiver ist</li>
+    </ul>
+
+    <h3>Meine Hausbesuchsleistungen umfassen:</h3>
+    <ul>
+        <li class="highlight">✅ Physiotherapie zur Verbesserung der Beweglichkeit</li>
+        <li class="highlight">✅ Schmerztherapie und gezielte Übungen</li>
+        <li class="highlight">✅ Individuelle Betreuung für ältere Menschen oder Patientinnen und Patienten mit chronischen Erkrankungen</li>
+    </ul>
+
+    <div class="section-divider"></div>
+
+    <h3>Ablauf & Terminvereinbarung:</h3>
+    <ul>
+        <li>🏠 Ich komme zu Ihnen nach Hause und führe die Therapie in Ihrer gewohnten Umgebung durch.</li>
+        <li> Rufen Sie mich an oder schreiben Sie mir eine Email, um einen Termin zu vereinbaren!</li>
+        <p>📞 Telefon: <a href="tel:+4369910482939" class="button">+43 699 10 48 29 39</a></p>
+        <p>📧 E-Mail: <a href="mailto:info@example.com" class="button">nasimhajian@gmail.com</a></p>
+    </ul>
+
+    <h3>Jetzt Termin vereinbaren!</h3>
+    <p>Möchten Sie mehr über meine Leistungen erfahren oder direkt einen Termin buchen? Ich freue mich darauf, Sie auf Ihrem Weg zur Gesundheit zu begleiten!</p>
 
 
 
