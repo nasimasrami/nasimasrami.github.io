@@ -15,7 +15,11 @@ html, body {
 }
 
 section h3 {
-    color: black;
+    color: #023a34;
+}
+
+li {
+    color: #007876;
 }
 
 
