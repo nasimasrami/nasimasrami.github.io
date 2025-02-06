@@ -27,7 +27,7 @@
     <div id="nav-placeholder"></div>
 
     <script>
-        fetch("nav.html")
+        fetch("/nav.html")
         .then(response => response.text())
         .then(data => document.getElementById("nav-placeholder").innerHTML = data);
     </script>
@@ -118,10 +118,10 @@
     </p>
 </section>
 
-    <footer>
-        <p>&copy; 2025 Nasim Hajian Asrami. Alle Rechte vorbehalten.</p>
-         <a href="dataprivacy.html">Privacy Policy</a> |
-    </footer>
+<footer>
+    <p>&copy; 2025 Nasim Hajian Asrami. Alle Rechte vorbehalten.</p>
+     <a href="/dataprivacy.html">Datenschutzerklärung</a> | <a href="/impressum.html">Impressum</a>
+</footer>
 
 </body>
 
