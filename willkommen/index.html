@@ -14,6 +14,10 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById("content-placeholder").innerHTML = data;
+            let link = document.createElement("link");
+            link.rel = "stylesheet";
+            link.href = "/css/styles.css"; 
+            document.head.appendChild(link);
             })
             .catch(error => console.error("Fehler beim Laden:", error));
     </script>
